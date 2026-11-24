@@ -571,7 +571,7 @@ document.getElementById('nlform').addEventListener('submit',function(e){e.preven
 (function(){var st=document.getElementById('start');if(!st||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
  var list=[].slice.call(st.parentElement.children).filter(function(e){return e.tagName==='SECTION'||(e.tagName==='FOOTER'&&e.classList.contains('foot'));});
  if(list.length<2)return;var n=list.length;
- list.forEach(function(e,i){e.style.position='relative';e.style.zIndex=String(n-i);if(i<n-1)e.style.boxShadow='0 30px 60px -30px rgba(0,0,0,.18)';});
+ list.forEach(function(e,i){e.style.position='relative';e.style.zIndex=String(n-i);if(i<n-1)e.style.boxShadow='0 30px 60px -30px rgba(12,22,22,.18)';});
  var tops=[],vh=window.innerHeight,lastY=-1,pend=false;
  function measure(){vh=window.innerHeight;tops=list.map(function(e){var y=0,o=e;while(o){y+=o.offsetTop;o=o.offsetParent;}return y;});lastY=-1;}
  function upd(){pend=false;var sy=window.pageYOffset;if(sy===lastY)return;lastY=sy;
